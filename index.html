@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="shortcut icon" href="./images/mist.png" type="image/jpg">
+    <title>WEATHER</title>
+</head>
+<body>
+    <div class="card">
+
+        <!--search country -->
+        <div class="search">
+            <input type="text" class="search-input" placeholder="please enter city name...">
+            <button class="search-btn"><img src="./images/search.png" class="search-btn-image"></button>
+        </div>
+
+        <!-- error text -->
+        <div class="error  visuallyhidden">
+            <p>Ooops!<br>please enter city name correctly! </p>
+        </div>
+
+        <!-- weather Info -->
+        <div class="weather  visuallyhidden">
+            <div class="weather-main">
+                <img src="./images/rain.png" class="weather-image">
+                <h1 class="weather-temp"></h1>
+                <h2 class="weather-city"></h2>
+            </div>    
+            <div class="weather-detail">
+                <div class="weather-detail-humidity">
+                    <img src="./images/humidity.png" class="weather-detail-image" >
+                    <div class="weather-detail-text">
+                        <p class=" weather-humidity"></p>
+                        <p class="weather-detail-name">humidity</p>
+                    </div>
+                </div>
+                <div class="weather-detail-wind">
+                    <img src="./images/wind.png" class="weather-detail-image" >
+                    <div class="weather-detail-text">
+                        <p class="weather-wind"></p>
+                        <p class="weather-detail-name">wind</p>  
+                    </div>
+                    
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+    
+</body>
+</html>

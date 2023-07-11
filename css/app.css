@@ -1,0 +1,124 @@
+/* ------------Normalize----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+/* ---- start styling -----------*/
+body{
+    background-color: #222;
+}
+.card{
+    width: 80%;
+    max-width:500px ;
+    background: linear-gradient(135deg,#002B5B,#393E46);
+    border-radius: 15px;
+    margin: 100px auto ;
+    padding:50px 25px ;
+    color: #ebfffc;
+    text-align: center;
+}
+
+  
+.visuallyhidden {
+    opacity: 0;
+}
+/* -------styling search part */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.search-input{
+    border: none;
+    outline: none;
+    padding: 10px 20px ;
+    border-radius: 30px;
+    height: 40px;
+    flex: 1;
+    margin-right:10px;
+    background-color: #ebfffc;
+    color: #555;
+    transition: 0.3s;
+}
+/* .search-input:focus{
+    background-color: #393E46;
+    color: #ebfffc;
+} */
+.search-btn{
+    cursor: pointer;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    padding-top: 4px;
+    padding-right: 2px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: 0.3s;
+}
+.search-btn:hover{
+    background-color: #393E46;
+}
+.search-btn img{
+    width: 17px;
+}
+
+/* -----manage error */
+.error{
+    display: none;
+    margin-right: 18px;
+    margin-top: 25px;
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+    transition: all 1s linear;
+    
+}
+/* -----styling weather data */
+.weather{
+    display: none;
+    transition: all 1s linear;
+}
+.weather-image{
+    width: 175px;
+    margin-top: 30px;
+}
+.weather-temp{
+    margin-top: -15px;
+    font-size: 60px;
+    font-weight: 500;
+}
+.weather-city{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+/* ----styling humidity and wind------ */
+.weather-detail{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ebfffc;
+    margin-top: 15px;
+
+}
+.weather-detail-humidity , .weather-detail-wind{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.weather-wind , .weather-humidity{
+    font-size: 22px ;
+    margin-bottom: 3px;
+}
+.weather-detail-name{
+    font-size: 13px;
+}
+.weather-detail-image{
+    margin-right: 10px;
+    width: 40px;
+}
